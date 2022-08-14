@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222f3e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding-right: 20px;
+}
+
+.inner_Dashbord {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    gap: 20px;
+}
+
+.menu_bar {
+    background-color: #576574;
+    height: 100vh;
+}
+
+.menu_bar .logo {
+    padding: 20px 20px;
+    color: rgb(3, 232, 248);
+}
+
+nav {
+    padding: 15px 0px 0px 10px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav ul li i {
+    font-size: 20px;
+    padding: 7px;
+    color: aqua;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li:hover {
+    background-color: #222f3e;
+    border-radius: 5px;
+}
+
+.view_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.active_order,
+.Complete_order,
+.Pending_order,
+.total_earning {
+    background-color: #576574;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 2px solid rgb(34, 173, 238);
+    font-weight: 400;
+}
+
+.order_summary span {
+    color: rgb(228, 222, 222);
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    padding-top: 50px;
+}
+
+.RECENT_TRANSCATIONS {
+    background-color: #576574;
+    padding: 20px 5px 20px 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.RECENT_TRANSCATIONS h4 {
+    margin-bottom: 15px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.clients_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* Table */
+
+.Customers {
+    margin-top: 30px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border-bottom: 1px solid #928f8f;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: rgb(148, 151, 153);
+}
+
+
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} */
