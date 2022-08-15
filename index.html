@@ -8,8 +8,6 @@
     <title>Dashbord</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,15 +19,20 @@
                     <!-- Brand Name -->
                     <div class="logo">
                         <h2>DM-Shop</h2>
+
+                        <div class="menu_icon">
+                            <i class="fa-solid fa-align-left" id="menu"></i>
+                        </div>
                     </div>
                     <nav>
                         <ul>
-                            <li><i class="fa-solid fa-gauge"></i> <a href="#">Dashbord</a></li>
+                            <li><i class="fa-solid fa-house"></i> <a id="link" href="#">Dashbord</a></li>
                             <li><i class="fa-regular fa-circle-user"></i> <a href="#">Customers</a></li>
                             <li><i class="fa-regular fa-comments"></i> <a href="#">Message</a></li>
                             <li><i class="fa-solid fa-clipboard-user"></i> <a href="#">Report</a></li>
                             <li><i class="fa-solid fa-gear"></i> <a href="#">Setting</a></li>
                             <li><i class="fa-solid fa-right-from-bracket"></i> <a href="#">Logout</a></li>
+                            <li><i class="fa-solid fa-plus"></i> <a href="#">Create Post</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,6 +40,24 @@
 
                 <div class="middle">
                     <h2>Welcome To Dashboard</h2>
+
+                    <!-- Filter+profile bar -->
+                    <div class="filter_menu">
+                        <div class="date_filter">
+                            <input type="date">
+                        </div>
+
+
+
+
+                        <div class="profile">
+                            <img src="./picture/ (3).jpg" alt="">
+                        </div>
+                    </div>
+
+
+
+
                     <div class="view_area">
                         <div class="order_summary">
                             <div class="active_order">
@@ -104,7 +125,19 @@
                                 <td>2000</td>
                                 <td>Paid</td>
                             </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Alfreds</td>
+                                <td>example@gmail.com</td>
+                                <td>3</td>
+                                <td>2000</td>
+                                <td>Paid</td>
+                            </tr>
                         </table>
+
+                        <div class="orde_list_More">
+                            <a href="#">See More  <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -160,6 +193,11 @@
             </div>
         </div>
     </main>
+
+
+
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
