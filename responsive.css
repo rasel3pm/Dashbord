@@ -1,0 +1,118 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-right: 0px;
+    }
+    .inner_Dashbord {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .menu_bar {
+        /* background-color: #576574;
+        height: 100vh; */
+        display: none;
+    }
+    .middle h2 {
+        text-align: center;
+    }
+    .filter_menu {
+        padding: 8px;
+    }
+    .view_area {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .active_order,
+    .Complete_order,
+    .total_earning {
+        padding: 15px;
+        border-left: 0px;
+        font-weight: 300;
+    }
+    /* Sidebar */
+    .sidebar {
+        padding-top: 40px;
+    }
+    .RECENT_TRANSCATIONS {
+        padding: 20px 10px 20px 10px;
+    }
+    .clients {
+        justify-content: space-around;
+    }
+    /* Table */
+    .orde_list_More {
+        display: flex;
+        justify-content: center;
+    }
+    .orde_list_More a {
+        color: var(--primary);
+    }
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding-right: 0px;
+    }
+    .inner_Dashbord {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .menu_bar {
+        /* background-color: #576574;
+        height: 100vh; */
+        display: none;
+    }
+    .view_area {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    .active_order,
+    .Complete_order,
+    .total_earning {
+        padding: 15px;
+        border-left: 0px;
+        font-weight: 300;
+    }
+    /* Sidebar */
+    .sidebar {
+        padding-top: 40px;
+    }
+    .RECENT_TRANSCATIONS {
+        padding: 20px 10px 20px 10px;
+    }
+    .clients {
+        justify-content: space-around;
+    }
+    /* Table */
+    .orde_list_More {
+        display: flex;
+        justify-content: center;
+    }
+    .orde_list_More a {
+        color: var(--primary);
+    }
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/*x-large devices (dekstops,1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+
+/*Extra extra  large devices (larges desktops, 1200px and up)*/
+
+@media (min-width: 1400px) {}
