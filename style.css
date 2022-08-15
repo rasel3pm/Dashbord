@@ -3,11 +3,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
     background-color: #222f3e;
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* root color */
+
+:root {
+    --primary: #00b894;
+    --text_color: #f5f6fa;
+}
+
+
+/* color */
+
+.middle h2,
+.menu_bar .logo,
+tr {
+    color: var(--primary);
+}
+
+
+/* text color */
+
+nav ul li i,
+nav ul li a,
+.active_order,
+.Complete_order,
+.total_earning,
+.order_summary span,
+.RECENT_TRANSCATIONS,
+tr>th,
+tr:hover {
+    color: var(--text_color);
+}
+
+
+/* border radious */
+
+.filter_menu,
+.active_order,
+.Complete_order,
+.total_earning,
+.RECENT_TRANSCATIONS,
+table,
+tr:hover {
+    border-radius: 8px;
+}
+
+
+/* Cursor pointer */
+
+.menu_icon i,
+nav ul li,
+.clients,
+tr:hover {
+    cursor: pointer;
 }
 
 .container {
@@ -26,14 +83,12 @@ body {
 }
 
 .middle h2 {
-    color: #00b894;
     padding: 20px 0;
 }
 
 .filter_menu {
-    background-color: #00b894;
+    background-color: var(--primary);
     padding: 10px;
-    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,13 +102,11 @@ body {
 
 .menu_bar .logo {
     padding: 20px 20px;
-    color: #00b894;
     display: flex;
     justify-content: space-around;
 }
 
 .menu_icon i {
-    cursor: pointer;
     font-size: 20px;
 }
 
@@ -62,27 +115,22 @@ nav {
 }
 
 nav ul li {
-    list-style: none;
     padding: 10px;
     margin: 5px;
-    cursor: pointer;
 }
 
 nav ul li i {
     font-size: 20px;
     padding: 7px;
-    color: #f2f7f6;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
     font-size: 17px;
     font-weight: 300;
 }
 
 nav ul li:hover {
-    background-color: #00b894;
+    background-color: var(--primary);
     border-radius: 5px;
 }
 
@@ -98,27 +146,21 @@ nav ul li:hover {
 .total_earning {
     background-color: #576574;
     padding: 20px;
-    border-radius: 8px;
-    border-left: 2px solid #00b894;
+    border-left: 2px solid var(--primary);
     font-weight: 400;
     transition: all 0.5s;
-    color: white;
 }
 
 .total_earning:hover {
-    background-color: #00b894;
+    background-color: var(--primary);
 }
 
 .active_order:hover {
-    background-color: #00b894;
+    background-color: var(--primary);
 }
 
 .Complete_order:hover {
-    background-color: #00b894;
-}
-
-.order_summary span {
-    color: rgb(228, 222, 222);
+    background-color: var(--primary);
 }
 
 
@@ -131,8 +173,6 @@ nav ul li:hover {
 .RECENT_TRANSCATIONS {
     background-color: #576574;
     padding: 20px 5px 20px 20px;
-    border-radius: 10px;
-    color: aliceblue;
 }
 
 .RECENT_TRANSCATIONS h4 {
@@ -144,12 +184,11 @@ nav ul li:hover {
     justify-content: space-between;
     align-items: center;
     padding: 7px;
-    cursor: pointer;
     transition: all 0.5s;
 }
 
 .clients:hover {
-    background-color: #00b894;
+    background-color: var(--primary);
     border-radius: 5px;
 }
 
@@ -171,7 +210,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     background-color: #576574;
-    border-radius: 10px;
 }
 
 td {
@@ -181,14 +219,12 @@ td {
 }
 
 tr>th {
-    background-color: #00b894;
+    background-color: var(--primary);
     padding: 8px;
-    color: white;
 }
 
 tr {
     transition: all 0.4s;
-    color: #00b894;
 }
 
 tr td {
@@ -196,11 +232,8 @@ tr td {
 }
 
 tr:hover {
-    background-color: #00b894;
-    cursor: pointer;
-    color: white;
+    background-color: var(--primary);
     transform: scale(1.05);
-    border-radius: 10px;
 }
 
 .orde_list_More {
@@ -209,5 +242,5 @@ tr:hover {
 }
 
 .orde_list_More a {
-    color: #00b894;
+    color: var(--primary);
 }
